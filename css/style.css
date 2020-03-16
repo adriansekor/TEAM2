@@ -1,4 +1,54 @@
-.title {
+body {
+    background-image: url(https://i.stack.imgur.com/fhEwl.png);
+    font-family: Georgia, serif;
+}
+
+.h1 {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+    word-spacing: 6px;
+    color: #ffffff;
+    font-weight: normal;
+    text-decoration: underline solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    text-shadow: 4px 3px 0 #000000, 2px 2px 2px rgba(0, 0, 0, 0);
+}
+
+.h3 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.h2 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    color: #19437F;
+    font-weight: 700;
+    text-decoration: underline solid rgb(68, 68, 68);
     font-style: italic;
-    color: red;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.text {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
 }
