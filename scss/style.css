@@ -114,4 +114,15 @@ footer, footer > .container {
   background-color: #333333;
   color: white;
 }
+
+blockquote.code {
+  background-color: black;
+  padding: 10px;
+  color: lime;
+  font-family: monospace;
+}
+
+.code > .margin1 {
+  padding-left: 2em;
+}
 /*# sourceMappingURL=style.css.map */
