@@ -1,6 +1,21 @@
-body {
-    background-image: url(https://i.stack.imgur.com/fhEwl.png);
+body{
+    background-color: #DDDDDD;
     font-family: Georgia, serif;
+}
+
+body > .container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  body .container {
+      width: 85% !important
+  }
 }
 
 .h1 {
@@ -75,20 +90,4 @@ text-align: center;
     padding-left:5%;
   }
 
-  body > .container {
-    width: 70% !important;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-
-  @media screen and (max-width: 600px) {
-
-    body .container {
-        width: 85% !important
-    }
-
-
-
-
-}
+ 
