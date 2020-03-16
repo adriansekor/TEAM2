@@ -52,3 +52,43 @@ body {
     font-variant: normal;
     text-transform: none;
 }
+
+p {
+    font: 100% sans-serif;
+  }
+ .title3{
+color: rgba(255, 0, 0, 0.596);
+font: 200% sans-serif;
+text-align: center;
+  }
+  .title4{
+    color: rgba(255, 0, 0, 0.596);
+    font: 200% sans-serif;
+    text-align: left;
+      }
+  .title2{
+    font: 150% sans-serif;
+    text-align: center;
+  }
+  .texts-steps{
+    height: 70%;
+    padding-left:5%;
+  }
+
+  body > .container {
+    width: 70% !important;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+
+  @media screen and (max-width: 600px) {
+
+    body .container {
+        width: 85% !important
+    }
+
+
+
+
+}

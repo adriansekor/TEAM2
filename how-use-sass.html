@@ -4,38 +4,74 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 
     <title>Cómo usar SASS</title>
-
 
 </head>
 
 <body>
 
-    <div>
-        <h1 class="title">SASS</h1>
-        <h3>Tutorial básico de utilización para </h3>
-    </div>
+    <div class="container">
+
+        <div id="titles">
+            <h1 class="title3">SASS</h1>
+            <h3 class="title2">Como usar SASS de manera "Sencilla"</h3>
+        </div>
+
+        <div class="section">
+            <h3 class="title4">Introducción</h3>
+        <p>Al desarrollar con un preprocesador se consigue principalmente un ahorro de tiempo, ya que tenemos que escribir menos código para hacer las cosas.<br> Pero también conseguimos una mayor facilidad de mantenimiento del código, gracias a una mejor organización
+            del código y la posibilidad de editar una vez ciertos valores y que afecten a decenas, o cientos, de lugares del código CSS generado. </p>
+        </div>
+        
+        <div class="section">
+            <h3 class="title4">Por qué Sass</h3>
+            <p>Cualquier preprocesador es perfectamente válido. Podríamos sin duda elegir otras alternativas como Less o Stylus y estaría estupendo para nosotros y nuestro proyecto, ya que al final todos ofrecen más o menos las mismas utilidades. Pero sin embargo, Sass se ha convertido en el preprocesador más usado y el más demandado. 
+
+                Al haber recibido un mayor apoyo de la comunidad es más factible que encuentres ofertas de trabajo con Sass o que heredes proyectos que usan Sass, por lo que generalmente te será más útil aprender este preprocesador. 
+                
+                Además, varios frameworks usan Sass, como el caso de Bootstrap. Por ello, si tienes que trabajar con ellos te vendrá mejor aprender Sass. 
+                </a>
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Cómo es la sintaxis de Sass</h3>
+            <p>Como decimos, la tarea de aprender Sass se divide en dos bloques principales. Primero aprender a trabajar con el código de Sass y conocer su sintaxis especial. La segunda tarea sería aplicar Sass en tu flujo de trabajo, de modo que puedas usar el preprocesador fácilmente y no te quite tiempo el proceso de compilación a CSS. Veremos las dos partes en este primer artículo del Manual de Sass, comenzando por examinar su sintaxis. 
+
+                Obviamente, no vamos a poder explicar la sintaxis de Sass en unas pocas líneas. Para eso tenemos el manual completo, pero queremos comenzar dando algunos ejemplos para que veas cómo es. 
+                
+                Lo primero que debes conocer de Sass es que existen dos tipos de sintaxis para escribir su código: 
+                •Sintaxis Sass: esta sintaxis es un poco diferente de la sintaxis de CSS estándar. No difiere mucho. Por ejemplo, te evita colocar puntos y coma al final de los valores de propiedades. Además, las llaves no se usan y en su lugar se realizan indentados. 
+                •Sintaxis SCSS: Es una sintaxis bastante similar a la sintaxis del propio CSS. De hecho, el código CSS es código SCSS válido. Podríamos decir que SCSS es código CSS con algunas cosas extra.
+                
+                En la práctica, aunque podría ser más rápido escribir con sintaxis Sass, es menos recomendable, porque te aleja más del propio lenguaje CSS. No solo es que te obligue a aprender más cosas, sino que tu código se parecerá menos al de CSS estándar y por lo tanto es normal que como desarrollador te sientas menos "en casa" al usar sintaxis Sass. En cambio, al usar SCSS tienes la ventaja de que tu código CSS de toda la vida será válido para el preprocesador, pudiendo reutilizar más tus conocimientos y posibles códigos de estilo con los que vengas trabajando en los proyectos. 
+                
+                Como entendemos que al usar un preprocesador es preferible mantenerse más cerca del lenguaje CSS, en este manual usaremos siempre sintaxis SCSS. 
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Ejemplo</h3>
+            <p>$color-fondos: #F55;
+
+                h1 {
+                background-color: $color-fondos;
+                }</a></a>
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Cómo usar Sass</h3>
+            <p>Preprocesar con alguna herramienta de interfaz gráfica, como el caso de Prepros, CodeKit o Scout-App. En principio puede ser más sencillo, ya que no requiere trabajar con la línea de comandos, pero necesitas usar un programa en concreto y no siempre puede estar disponible para ti, o no integrarse en otro flujo de trabajo que puedas tener ya asumido en tu proyecto. Además, las mejores herramientas de interfaz gráfica tienen la desventaja de ser de pago, o necesitar una licencia para desbloquear todo su poder.</p>
+            <p>Usar la línea de comandos para preprocesar. Esta es la opción preferida por la mayoría de desarrolladores. No sólo porque no requiere la compra de una licencia por el software de interfaz gráfica, sino principalmente porque la puedes integrar con todo un ecosistema de herramientas para optimizar multitud de aspectos en un sitio web. Además, está al alcance de cualquier desarrollador, ya que todos tenemos un terminal en nuestro sistema operativo y finalmente, permite personalizar completamente el comportamiento del preprocesador.</p>
+            <p>Usar herramientas de automatización. Como tercera opción es muy común también usar herramientas que permiten automatizar el flujo de trabajo frontend, compilando archivos CSS, Javascript, optimizando imágenes, etc. Nos referimos a paquetes como Gulp, Grunt o Webpack (aunque este último es más un empaquetador). Estos sistemas tienen la particularidad que sirven para cubrir todas las necesidades de trabajo con los lenguajes de la web y no solamente se usan para compilar el código Sass. Sería la opción más potente de las tres comentadas, aunque requiere mayor formación para poder usarlas. En este grupo también podríamos unir a PostCSS, aunque esta herramienta solamente nos sirve para convertir el CSS, aplicando diversos plugins, entre los que podría estar la compilación de Sass, y no entra en áreas como el Javascript. </p>
+        </div>
 
 
-    <div>
-        <h3>Introducción</h3>
-        <p>Git és un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia <br>y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente.</p>
     </div>
-    <h3>Paso 1 el Registro</h3>
-    <p>Registrarte en unos de los principales gestores de git en nuestro caso usamos <a href="https://github.com/"> Github</a></p>
-    <h3>Paso 2 Crear un repositorio</h3>
-    <p>Clicamos en <a href="https://github.com/new">New</a> para crear un nuevo repositorio Git</p>
-    <h3>Paso 3 Añadir colaboradores</h3>
-    <p>El siguiente paso seria añadir a los miembros del equipo  iriamos a <a href="https://github.com/adriansekor/TEAM2/settings">Settings</a>/<a href="https://github.com/adriansekor/TEAM2/settings/access">Manage Access</a></a> </p>
-    <p>Ahora le damos a Invite Collaborator y ponemos los usuarios</p>
-    <p>Dado este momento cada colaborador del proyecto deberá aceptar en su correo la invitación</p>
-    <h3>Paso 4 Configurar Git con Visual code</h3>
-    <p>Nosotros en esta caso vamos a configurar Git con Visual Code Studio entonces abrimos el programa.</p>
-    <p>Vamos a donde pone Git Source control Clone git repositories copiamos el enlace de nuestro proyecto.</p>
-    <p>Seleccionamos la carpeta en la que queremos hacer la copia del proyecto y le damos a sincronizar entonces ya</p>
-    <p>tenemos habilitado nuestro Visual con Git podemos hacer un commit + push para probarlo :)</p>
+
 </body>
 
 </html>
